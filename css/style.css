@@ -93,6 +93,13 @@ nav {
     flex-direction: row;
     justify-content: center;
 }
+.profile-photo {
+    width: 450px; /* 사진 크기는 안 변하니 고정값 450px */
+}
+.profile-photo img {
+    width: 100%; /* 사진 부모 박스에 다 채우기 */
+    border-radius: 20px;
+}
 .profile-information {
     width: 450px; /* profile-photo와 같은 width */
     padding-left: 50px; /* profile-photo와의 간격 */
@@ -186,7 +193,6 @@ nav {
     font-size: 36px;
 }
 
-/* portfolio - 포트폴리오 */
 /* section5 contact */
 #sec5 {
     margin: 50px 0; /* section 위 아래 margin 주기 */
@@ -216,11 +222,21 @@ nav {
     backface-visibility: hidden; /* 카드 플립 애니메이션, 뒷면 안 보이게 처리 */
     transition: 1s; /* 카드 플립 애니메이션 */
 }
+.contact-card-front-picture img{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
 .contact-card-front-content {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
