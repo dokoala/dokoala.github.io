@@ -14,6 +14,8 @@
     <script defer src="js/main.js"></script>
     <!-- swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- kakao map api -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=70a566eb9cc0d5eb80e527d2841f7a01"></script>
 
     <title>김동현 포트폴리오</title>
 </head>
@@ -37,7 +39,7 @@
             <div class="introduce">
                 <h1>INTRODUCE</h1>
                 <p class="introduce-content">
-    
+                    
                     안녕하십니까 김동현입니다.<br><br>
                                             
                     저는 백엔드 취업을 목표로 하고 있었습니다.<br><br>
@@ -89,7 +91,12 @@
                             <dt>BIRTH</dt>
                             <dd>1994 3 28</dd>
                             <dt>ADDRESS</dt>
-                            <dd>경북 경산시 중방동</dd>
+                            <dd>경북 경산시 중방동 
+                                <input type="button" value="어디?" onclick="on()">
+                                <div id="overlay" onclick="off()">
+                                    <div id="map"></div>
+                                </div>                                
+                            </dd>
                             <dt>COLLEGE</dt>
                             <dd>대구가톨릭대학교 정보통신공학과<br><br>
                                 2013. 03 ~ 2017. 02
@@ -99,7 +106,7 @@
                             <dt>PHONE</dt>
                             <dd>일단 비공개</dd>
                         </dl>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div> <!-- inner -->
@@ -283,7 +290,7 @@
             <div class="contact">
                 <h1>CONTACT</h1>
                 <div class="contact-content">
-                    <div class="contact-card"> <!-- 명함 -->
+                    <div class="contact-card"> <!-- 명함 처음 -->
                         <div class="contact-card-front front">
                             <div class="contact-card-front-picture">   
                                 <img src="images/photo/mychar.jpg" alt="">
@@ -297,7 +304,7 @@
                             <div class="contact-card-back-content">
                                 <div class="contact-card-back-left">
                                     <p>김동현</p>
-                                    <p> develop</p>
+                                    <p> developr</p>
                                 </div>
                                 <div class="contact-card-back-right">
                                     <div>
@@ -313,7 +320,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- 명함 -->
+                    </div> <!-- 명함 끝-->
                     <div class="contact-email">
                         <a href="https://mail.naver.com/write" target="blank">
                             <input type="button" value="메일을 작성하시겠습니까?">
