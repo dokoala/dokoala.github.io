@@ -217,7 +217,6 @@ nav {
     font-weight: 700;
     font-size: 36px;
 }
-
 /* section5 contact */
 #sec5 {
     margin: 50px 0; /* section 위 아래 margin 주기 */
@@ -431,13 +430,6 @@ footer {
 .swiper-slide-content {
     width: 40%;
 }
-.portfolio-kogas-content span {
-    text-decoration: underline;
-    color: blue;
-}
-.portfolio-react-content {
-    width: 20%;
-}
 .swiper-slide-content>h3 {
     text-align: left;
 }
@@ -449,7 +441,7 @@ footer {
 
 .introduce-content-btn {
     border: none;
-    background-color: #a048db;
+    background-color: #000000;
     color: #fff;
     border-radius: 10px;
     width: 80px;
@@ -458,7 +450,7 @@ footer {
     transition: .4s;
 }
 .introduce-content-btn:hover {
-    background-color: #751bb1;
+    background-color: #302e2e;
     width: 85px;    
 }
 .introduce-content-box {
