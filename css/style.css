@@ -12,11 +12,6 @@ body {
 .inner {
     margin: 0 auto;
 }
-.clear::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 li {
    list-style: none;
 }
