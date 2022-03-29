@@ -19,12 +19,12 @@ new Swiper(".swiper", {
 });
 
 //overlay
-function on() {
+async function on() {
     document.getElementById("overlay").style.display = "block";
-    map.relayout();
+    await map.relayout();
 }
 
-function off() {
+async function off() {
     document.getElementById("overlay").style.display = "none";
 }
 

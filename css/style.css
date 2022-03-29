@@ -55,7 +55,7 @@ nav {
 /*section1 introduce*/
 #sec1 {
     margin: 50px 0; /* section 위 아래 margin 주기 */
-    padding: 50px 0; /* section 위 아래 padding 주기 */
+    padding: 50px 0; 
     position: relative;
 }
 .introduce h1 {
@@ -70,10 +70,39 @@ nav {
     text-align: left;
     color: #000;
 }
+
+
+/* 표 */
+
+.introduce-content-btn {
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    transition: .4s;
+}
+.introduce-content-btn:hover {
+    background-color: #302e2e;
+    width: 85px;    
+}
+.introduce-content-box {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 50px 0;
+    display: none;
+    font-weight: bold;
+}
+.introduce-content-box.on {
+    display: block;
+}
 /* section2 profle*/
 #sec2 {
     margin: 50px 0; /* section 위 아래 margin 주기 */
-    padding: 50px 0; /* section 위 아래 padding 주기 */
+    padding: 50px 0; 
     position: relative;
 }
 .profile h1 {
@@ -88,10 +117,10 @@ nav {
     justify-content: center;
 }
 .profile-photo {
-    width: 450px; /* 사진 크기는 안 변하니 고정값 450px */
+    width: 450px;
 }
 .profile-photo img {
-    width: 100%; /* 사진 부모 박스에 다 채우기 */
+    width: 100%;
     border-radius: 20px;
 }
 .profile-information {
@@ -138,7 +167,7 @@ nav {
 /* section3 skills*/
 #sec3 {
     margin: 50px 0; /* section 위 아래 margin 주기 */
-    padding: 50px 0; /* section 위 아래 padding 주기 */
+    padding: 50px 0; 
     position: relative;
 }
 .skills h1 {
@@ -166,7 +195,7 @@ nav {
 .skills-all {
     width: 100%;
     display: flex;
-    flex-flow: row wrap; /* 자격증 section은 flex-flow 사용 */
+    flex-flow: row wrap; 
     justify-content: start;
     margin: 0 auto;
     padding: 0;
@@ -175,9 +204,9 @@ nav {
     width: 60px;
     height: 100px;
     padding: 10px;
-    box-shadow: 1px 1px 10px 1px #eee;
+    box-shadow: 1px 1px 15px 1px #eee;
     border-radius: 20px;
-    margin: 20px; /* 스택들 사이 간격 */
+    margin: 20px;
     cursor: pointer;
 }
 .skills-all li:hover img {
@@ -197,7 +226,7 @@ nav {
 /* section4 portfolio */
 #sec4 {
     margin: 50px 0; /* section 위 아래 margin 주기 */
-    padding: 50px 0; /* section 위 아래 padding 주기 */
+    padding: 50px 0; 
     position: relative;
 }
 .portfolio {
@@ -213,8 +242,8 @@ nav {
 }
 /* section5 contact */
 #sec5 {
-    margin: 50px 0; /* section 위 아래 margin 주기 */
-    padding: 50px 0; /* section 위 아래 padding 주기 */
+    margin: 50px 0; 
+    padding: 50px 0; 
     position: relative;
 }
 .contact {
@@ -227,14 +256,13 @@ nav {
     text-align: center;
 }
 .contact-card {
-    width: 543px; /* 1087px 반 */
-    height: 307px; /* 614px 반 */
+    width: 543px; 
+    height: 307px; 
     margin: 0 auto;
-    perspective: 1000px; /* 카드 플립 애니메이션, 원근감 줌 */
 }
 .contact-card-front {
-    width: 543px; /* 1087px 반 */
-    height: 307px; /* 614px 반 */
+    width: 543px;
+    height: 307px; 
     background-color: #333;
     position: relative;
     backface-visibility: hidden; /* 카드 플립 애니메이션, 뒷면 안 보이게 처리 */
@@ -296,7 +324,7 @@ nav {
 }
 .contact-card-back-left p {
     font-size: 20px;
-    font-weight: 100; /* 얇게 */
+    font-weight: 100; 
     color: #eee;
     margin: 0;
     padding: 0;
@@ -390,7 +418,8 @@ footer {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #fff;    
+    padding: 100px 0;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -405,9 +434,6 @@ footer {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-
-    /* 내가 추가한 코드 */
-    padding: 100px 0;
 }
 .swiper-slide img {
     width: 100%;
@@ -430,32 +456,4 @@ footer {
 }
 .swiper-slide-content>p {
     text-align: left;
-}
-
-/* 표 */
-
-.introduce-content-btn {
-    border: none;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 10px;
-    width: 80px;
-    height: 40px;
-    font-size: 16px;
-    transition: .4s;
-}
-.introduce-content-btn:hover {
-    background-color: #302e2e;
-    width: 85px;    
-}
-.introduce-content-box {
-    width: 40%;
-    margin: 0 auto;
-    text-align: left;
-    padding: 50px 0;
-    display: none;
-    font-weight: bold;
-}
-.introduce-content-box.on {
-    display: block;
 }
