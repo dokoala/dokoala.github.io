@@ -158,11 +158,11 @@ nav {
 }
 
 #map{
-    top: 25%;
-    left: 25%;
-    width:50%;
-    height:650px;
-    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:40%;  
+    height:450px;
+    transform: translate(-50%,-50%);
 }  
 /* section3 skills*/
 #sec3 {
